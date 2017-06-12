@@ -8,29 +8,29 @@
 
 </head>
 <body>
-	<header id="header" class="header contenedor"> 
-		<figure class="logotipo">
-			<img src="images/invie.png" alt="invie logotipo" width="186px" height="60px" />
-		</figure>
-		<nav class="menu">
-			<ul>
-				<li>
-					<a href="index.html">Home</a>
-				</li>
-				<li>
-					<a href="#guitarras">Guitarras</a>
-				</li>
-				<li>
-					<a href="precios.html">Precios</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
-	<section id="portada" class="portada">
+	<section id="portada" class="portada background">
+		<header id="header" class="header contenedor">
+			<figure class="logotipo">
+				<img src="images/invie.png" alt="invie logotipo" width="186px" height="60px" />
+			</figure>
+			<nav class="menu">
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="#guitarras">Guitarras</a>
+					</li>
+					<li>
+						<a href="precios.html">Precios</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
 		<div class="contenedor">
-			<h1 class="titulo">Guitarras inviesibles</h1>
+			<h1 class="titulo">Guitarras <span>invie</span>sibles</h1>
 			<h3 class="title-a">Sé la estrella de Rock que siempre quisiste ser</h3>
-			<button>Conoce más</button>
+			<a href="#guitarras" class="button">Conoce más</a>
 		</div>
 	</section>
 	<section id="guitarras" class="guitarras contenedor">
@@ -45,9 +45,9 @@
 					<li>Incluye estuche invisible de Aluminio</li>
 				</ol>
 			</div>
-			
+
 		</article>
-		<article class="guitarra">
+		<article class="guitarra b">
 			<img src="images/invie-classic.png" class="izquierda" width="350px" alt="Guitarra Invie Classic" />
 			<div class="contenedor-guitarra-b">
 				<h3 class="title-b">Invie Classic</h3>
@@ -57,22 +57,56 @@
 					<li>Inicia tu camino como Rockstar</li>
 				</ol>
 			</div>
-			
+
 		</article>
 	</section>
 
 	<footer class="footer">
-	<div class="contenedor">
-		<div class="contacto">
-			<img src="images/invie-white.png" alt="logotipo blanco">
-			<a href="tel:+584169628553"><strong>Telefono</strong><span>584169628553</span></a>
-			<a href="mailto:contacto@invie.com"><strong>Email</strong><span>contacto@invie.com</span></a>
+		<div class="contenedor">
+			<div class="contacto">
+				<img src="images/invie-white.png" alt="logotipo blanco">
+				<a href="tel:+584169628553"><strong>Telefono</strong><span>584169628553</span></a>
+				<a href="mailto:contacto@invie.com"><strong>Email</strong><span>contacto@invie.com</span></a>
+			</div>
+			<form class="formulario">
+				<div class="col1">
+					<label for="nombre">Nombre:</label>
+					<input type="text" name="" value="" required id="nombre" name="nombre"/>
+					<label for="email">Email:</label>
+					<input type="email" name="" value="" required id="email" name="email"/>
+
+					<div class="sexo">
+						<label for="mujer">
+							<input type="radio" id="mujer" name="sexo"  value="mujer" checked /> Mujer
+						</label>
+						<label for="hombre">
+							<input type="radio" id="hombre" name="sexo"  value="hombre" /> Hombre
+						</label>
+					</div>
+					<div class="intereses">
+						<label for="cotizacion">
+							<input type="checkbox" id="cotizacion" name="intereses" value="cotizacion" checked/> Cotizacion
+						</label>
+						<label for="reclamos">
+							<input type="checkbox" id="reclamos" name="intereses" value="reclamos"/> Reclamos
+						</label>
+						<label for="comentarios">
+							<input type="checkbox" id="comentarios" name="intereses" value="comentarios"/> Comentarios
+						</label>
+						<label for="otros">
+							<input type="checkbox" id="otros" name="intereses" value="otros"/> Otros
+						</label>
+					</div>
+				</div>
+
+				<div class="col2">
+					<label for="comentario">Comentarios</label>
+					<textarea name="comentarios" rows="7" cols="30" id="comentario"></textarea>
+					<input type="submit" value="Enviar" class="button"/>
+				</div>
+
+			</form>
 		</div>
-		<div class="formulario">
-			
-		</div>	
-	</div>
-	
 	</footer>
 </body>
 </html>
